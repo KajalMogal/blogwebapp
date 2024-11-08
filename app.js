@@ -120,7 +120,6 @@ if (process.env.NODE_ENV !== "production") {
   // Connect to the MongoDB database
   connectDB();  
   
-  // Start the server
   const port = process.env.PORT || 3000;
   app.listen(port, () => {
     console.log(`Serving on port ${port}`);
@@ -129,3 +128,5 @@ if (process.env.NODE_ENV !== "production") {
   
 
 
+
+  
