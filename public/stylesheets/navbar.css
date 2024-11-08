@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.navbar {
+    background-color: rgb(1, 25, 48);
+}
+svg {
+    color: white;
+    height: 2rem; 
+    width: 2rem;
+}
+
+
+.custom-navlink {
+    background-color: rgb(122, 129, 151);
+    height: 2.5rem;
+    width: 5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+.nav-link {
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: white;
+    font-size: 1rem;
+}

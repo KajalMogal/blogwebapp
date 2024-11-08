@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient( rgba(216, 220, 96, 0.5), rgba(216, 220, 96, 0.5)),
+    url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+.cover-container {
+    max-width: vw;
+} 
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+img {
+    height: 20rem;
+    width: 50rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card-text {
+    font-size: 1.2rem;
+}
+.btn svg {
+    height: 1.5rem;
+    width: 1.5rem;
+
+}
+.btn-secondary {
+    background-color: black;   
+}
+
+.card-body .btn svg {
+    height: 2rem;
+    width: 2rem;
+    fill: rgb(1, 0, 5);
+}
+
+.col-4 h2 svg {
+    color: white;
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+}
+
+.col-4 svg {
+    color: white;
+}
+.col-4 label {
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.col-4 p svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.author {
+    font-size: 1.5rem;
+    color: rgb(144, 140, 140);
+}
+.col-4 .btn-sm :hover {
+    color: rgb(87, 86, 86);
+}
+.back-btn svg {
+        height: 2rem;
+        width: 3.5rem;
+        fill: black;     
+}
+
+.back-btn svg:hover {
+    height: 2rem;
+    width: 3.5rem;
+    fill: rgb(62, 61, 61);     
+}
+
+.col-4 p svg {
+    fill: black;
+}
+
+/* .img-fluid {
+    height: 20rem;
+    width: 30rem;
+} */
+.card-body, .card-title, .card-text {
+    color: black;
+}
+.custom-comment {
+    border: 2px solid white;
+    border-radius: 1rem;
+    border-bottom-left-radius: 3.5rem;
+    max-width: 100%; 
+    overflow: hidden; 
+    display: block; 
+    padding: 1rem; 
+}
+
+.custom-comment .card-text {
+    color: white;
+    overflow-wrap: break-word; /* Break long words */
+    overflow: hidden; /* Hide overflowed content */
+    text-overflow: ellipsis; /* ellipsis for overflowing text */
+    white-space: normal; /* Allow text to wrap to the next line */
+}
+
+
+.custom-comment .mb-3 svg {
+    fill: white;
+}
+
+.col-8 .card{
+    background-color: rgb(43, 43, 42);
+    border-radius: 1rem;
+    color: rgb(9, 0, 0);
+    
+}
+
+.card-body .card-text, .card-title {
+    color:rgb(250, 245, 245);
+}
+
+.card-body .btn svg {
+    fill: rgb(249, 243, 243);
+}
+
+.card-body .btn svg:hover {
+    height: 2rem;
+    width: 2rem;
+    fill: rgb(124, 116, 116);
+}
+
+.col-4 .mb-3 textarea {
+    background-color:  rgb(247, 247, 241);
+    border-color: rgb(96, 100, 122);
+    color: rgb(27, 27, 27);
+}
+
+.col-4 .mb-3 textarea:hover {
+    border-color: rgb(162, 140, 188);
+}

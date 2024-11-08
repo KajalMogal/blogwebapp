@@ -1,0 +1,37 @@
+<% layout('./layouts/boilerplate') %>
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <div class="form-container">
+        <form action="/login" method="POST" novalidate class="needs-validation">
+            <div class="text-center">Login</div>
+            <div class="row">
+                <div class="col-6 offset-3">
+
+
+                    <div class="mb-3 mt-3">
+                        <label class="form-label" for="username">What's your username ?</label>
+                        <input class="form-control" type="text" id="username" placeholder="username" name="username"
+                            autofocus required>
+                        <div class="valid-feedback">
+                            good!
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="password">Password ?</label>
+                        <input class="form-control" type="password" placeholder="password" id="password" name="password"
+                            required>
+                        <div class="valid-feedback">
+                            good!
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+
+       

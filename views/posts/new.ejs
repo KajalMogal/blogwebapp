@@ -1,0 +1,59 @@
+<% layout('layouts/boilerplate') %>
+<link rel="stylesheet" href="/stylesheets/new.css">
+    <h1 class="text-center"></h1>
+    <form action="/posts" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+       <div class="row">
+        <div class="col-6 offset-3">
+            
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="post[title]" placeholder="title of your blog">
+                <div class="valid-feedback">
+                    good!
+                  </div>
+            </div>
+        
+            <input type="file" name="image" id="" multiple> 
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="post[description]" placeholder="type text..."></textarea>
+                <div class="valid-feedback">
+                    good!
+                  </div>
+            </div>
+    
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Post</button>
+            </div>
+        </div>
+       </div>
+    </form>
+
+    <div>
+        <a href="/posts"></a>
+    </div>
+
+  
+
+       
+<script>
+    (() => {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+form.addEventListener('submit', event => {
+if (!form.checkValidity()) {
+event.preventDefault()
+event.stopPropagation()
+}
+
+form.classList.add('was-validated')
+}, false)
+})
+})()
+</script>

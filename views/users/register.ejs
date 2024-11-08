@@ -1,0 +1,44 @@
+<% layout('./layouts/boilerplate') %>
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <div class="form-container">
+        <form action="/register" method="POST" novalidate class="needs-validation">
+            <div class="text-center">Register</div>
+            <div class="row">
+                <div class="col-6 offset-3">
+
+
+                    <div class="mb-4">
+                        <label class="form-label" for="email">What's your E-mail ?</label>
+                        <input class="form-control" type="email" id="email" placeholder="example@gmail.com" name="email"
+                            required>
+                        <div class="valid-feedback">
+                            good!
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label" for="username">What's your username ?</label>
+                        <input class="form-control" type="text" id="username" placeholder="username" name="username"
+                            autofocus required>
+                        <div class="valid-feedback">
+                            good!
+                        </div>
+                    </div>
+
+
+                    <div class="mb-4">
+                        <label class="form-label" for="password">Password ?</label>
+                        <input class="form-control" type="password" id="password" placeholder="password" name="password"
+                            required>
+                        <div class="valid-feedback">
+                            good!
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">Register</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>

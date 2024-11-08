@@ -1,0 +1,31 @@
+<% layout('./layouts/boilerplate') %>
+<link rel="stylesheet" href="/stylesheets/blogs.css">
+<div class="container">
+    <div class="row justify-content-center"> 
+        <% for(let post of posts) { %>
+            <div class="col-md-4"> 
+                    <div class="card-body mt-3 mb-3 custom-card">
+                            <div custom-border>
+                                <% if (post.images && post.images.length > 0) { %>
+                                  <img class="img-fluid" alt="<%= post.title %> Image" src="<%= post.images[0].url %>">
+                                <% } %>
+                              </div>
+                        <h5 class="card-title"><%= post.title %></h5> 
+                        <div class="text-center mb-2">
+                            <a class="btn btn-primary" href="/posts/<%=post._id%>">Read</a> 
+                        </div>
+                    </div>
+            </div>
+        <% } %>
+    </div>
+      
+</div>
+
+
+
+
+
+    
+
+
+    
